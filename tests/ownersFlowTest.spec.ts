@@ -5,7 +5,6 @@ let pm: PageManager;
 
 test.beforeEach(async ({ page }) => {
   pm = new PageManager(page)
-
   await page.goto('/')
   await pm.navigateTo().goToOwnersSearchPage()
   await pm.onOwnersSearchPage().expectTableHeadingToBe('Owners')
