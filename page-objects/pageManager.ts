@@ -17,7 +17,7 @@ export class PageManager {
   private readonly ownersSearchPage: OwnersSearchPage
   private readonly ownerInformationPage: OwnerInformationPage
   private readonly petDetailsPage: PetDetailsPage
-  private readonly pettYypesPage: PetTypesPage
+  private readonly petTypesPage: PetTypesPage
   private readonly veterinariansPage: VeterinariansPage
   private readonly specialtyPage: SpecialitiesPage
   private readonly vetEditPage: VetEditPage
@@ -30,7 +30,7 @@ export class PageManager {
     this.ownersSearchPage = new OwnersSearchPage(this.page)
     this.ownerInformationPage = new OwnerInformationPage(this.page)
     this.petDetailsPage = new PetDetailsPage(this.page)
-    this.pettYypesPage = new PetTypesPage(this.page)
+    this.petTypesPage = new PetTypesPage(this.page)
     this.veterinariansPage = new VeterinariansPage(this.page)
     this.specialtyPage = new SpecialitiesPage(this.page)
     this.vetEditPage = new VetEditPage(this.page)
@@ -47,7 +47,7 @@ export class PageManager {
     return this.ownerInformationPage
   }
   onPetTypesPage() {
-    return this.pettYypesPage
+    return this.petTypesPage
   }
   onPetDetailsPage() {
     return this.petDetailsPage
